@@ -23,4 +23,11 @@ public class SourceController {
 		map.put("ipList", souService.getIpV4ListFromSource(SOURCE_TEST));
 		return "ip";
 	}
+	
+	@RequestMapping("/test")
+	public String listIp(Map<String, Object> map) {
+		map.put("ip", new Source());
+		map.put("ipList", souService.getIpV4ListFromSource(SOURCE_TEST));
+		return "test";
+	}
 }
