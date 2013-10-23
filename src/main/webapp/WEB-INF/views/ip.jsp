@@ -29,7 +29,7 @@
 			<tr>
 				<td>${ip.id}</td>
 				<td>${ip.address}</td>
-				<td>${ip.date_added}</td>
+				<td>${ip.dateAdded}</td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -4,7 +4,11 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
 	<persistence-unit name="primary" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.nex.domain.IpAddress</class>
+		<class>com.nex.domain.IpV6Address</class>
 		<class>com.nex.domain.IpV4Address</class>
+		<class>com.nex.domain.NotValidIp</class>
+		<class>com.nex.domain.Source</class>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />
 			<property name="hibernate.connection.show_sql" value="true" />
@@ -13,7 +17,7 @@
 			<property name="hibernate.connection.username" value="andrew" />
 			<property name="hibernate.connection.password" value="1992" />
 			<property name="hibernate.connection.url"
-				value="jdbc:jtds:sqlserver://127.0.0.1;instance=SQLEXPRESS;DatabaseName=Ip_addresses" />
+				value="jdbc:jtds:sqlserver://127.0.0.1;instance=SQLEXPRESS;DatabaseName=new_ip_addresses" />
 		</properties>
 	</persistence-unit>
 </persistence> 
